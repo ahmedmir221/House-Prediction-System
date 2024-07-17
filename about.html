@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - House Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="background">
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('calculator') }}">Price Calculator</a> |
+            <a href="{{ url_for('about') }}">About Us</a>
+        </nav>
+    </header>
+
+    <section class="about-content">
+        <h2>About the Creator</h2>
+        <p>Welcome to the House Price Predictor tool. This project was created by :<b>Ahmed Mir</b></p>
+
+        <h2>Technologies and Tools Used</h2>
+        <ul>
+            <li><strong>Backend:</strong> <em>Python with Flask</em> - This lightweight web framework powers the backend of our application, making it easy to build and maintain.</li>
+            <li><strong>Machine Learning:</strong> <em>Scikit-Learn</em> - This powerful library allows us to create a robust predictive model, helping users get reliable house price estimates based on their inputs.</li>
+            <li><strong>Model Training:</strong> <em>Random Forest Regressor</em> - We chose this method for its ability to handle complex datasets and produce accurate predictions by combining the results of multiple decision trees.</li>
+            <li><strong>Data Handling:</strong> <em>Pandas</em> - This essential tool simplifies data manipulation and analysis, enabling us to preprocess the information effectively.</li>
+            <li><strong>Frontend:</strong> <em>HTML, CSS, JavaScript</em> - These foundational web technologies shape the user interface, ensuring a seamless and engaging experience for the users.</li>
+            <li><strong>Deployment:</strong> <em>Localhost</em> - For now, our application runs locally</li>
+        </ul>
+
+        <h2>Note</h2>
+        <p>The calculator is not accurate as the dataset given by kaggle is outdate and is till  march 2015</p>
+    </section>
+
+    <footer>
+        <section class="about">
+            <p>&copy; 2024 House Price Predictor. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>
